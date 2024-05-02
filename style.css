@@ -2,7 +2,12 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    
 }
+body {
+    overflow-x: hidden;
+}
+
 #home{
     background-color:#332D2D;
 }
@@ -36,3 +41,28 @@ a { color: inherit; }
 #home i:hover{
     color: yellow;
 }
+
+
+
+/* works */
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .card-text {
+    flex-grow: 1; /* Allow the text to grow vertically */
+  }
+  
+  
+  .card {
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .card:hover {
+    transform: scale(0.9); 
+  }
